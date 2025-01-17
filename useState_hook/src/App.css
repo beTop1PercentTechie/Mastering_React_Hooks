@@ -1,0 +1,139 @@
+.post-container {
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  padding: 24px;
+  width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.post-title {
+  margin: 0 0 16px 0;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.like-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.like-button:hover {
+  background-color: #eeeeee;
+}
+
+.like-button.liked {
+  background-color: #ffebee;
+  color: #e53935;
+}
+
+.like-button.liked:hover {
+  background-color: #ffdbdb;
+}
+
+.comments-section {
+  margin-top: 24px;
+}
+
+.comments-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.comments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-item {
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.no-comments {
+  color: #666;
+  font-style: italic;
+}
+
+.comment-input-container {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 20px;
+  border: 1px solid #e1e1e1;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.comment-input:focus {
+  border-color: #2196f3;
+}
+
+.post-button {
+  padding: 8px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.post-button:hover {
+  background-color: #1976d2;
+}
+
+/* Add some responsive design */
+@media (max-width: 600px) {
+  .post-container {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .comment-input-container {
+    flex-direction: column;
+  }
+
+  .post-button {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+.comment-text {
+  margin-bottom: 4px;
+}
+
+.comment-timestamp {
+  font-size: 0.8rem;
+  color: #666;
+}
